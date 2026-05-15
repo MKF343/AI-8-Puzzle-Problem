@@ -22,7 +22,7 @@ The solver tackles the puzzle using three distinct search strategies:
 ## Repository Structure
 
 * `Kirtland.py`: Contains the implementation for the uninformed search algorithms (**BFS** and **IDFS**). Includes a random state generator that walks backward from the goal state to ensure the generated puzzles are always solvable.
-* `Kirtland1.py`: Contains the implementation for the informed **A* Search** algorithm. Utilizes Python's `heapq` library to maintain a highly efficient priority queue based on the calculated costs.
+* `Kirtland1.py`: Contains the implementation for the informed **A-Star Search** algorithm. Utilizes Python's `heapq` library to maintain a highly efficient priority queue based on the calculated costs.
 
 ## Technical Highlights
 
@@ -45,7 +45,3 @@ python Kirtland1.py
 ```
 
 Upon execution, the scripts will generate a random, solvable starting board, execute the respective algorithms, and output the step-by-step path required to reach the goal state, along with the total nodes expanded and execution time.
-
----
-**Author:** Michael Kirtland  
-**Academic Focus:** Computer Science | Data Structures & Algorithms | Database Architecture
