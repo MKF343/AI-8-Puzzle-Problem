@@ -17,7 +17,7 @@ The solver tackles the puzzle using three distinct search strategies:
 
 * **Breadth-First Search (BFS):** An uninformed search method utilizing a FIFO queue. While it guarantees the shortest possible path to the goal, it demonstrates the high memory complexity associated with exploring all possible states level by level.
 * **Iterative-Deepening Depth-First Search (IDFS):** An uninformed search that repeatedly applies Depth-Limited Search (DLS) with an increasing depth limit. This strategy balances the path-optimality of BFS with the strict memory efficiency of DFS, featuring built-in cycle prevention.
-* **A* Search:** An informed, best-first search algorithm utilizing a custom **Manhattan Distance** heuristic. By calculating the total estimated cost utilizing the formula f(n) = g(n) + h(n), the algorithm intelligently prioritizes which nodes to expand. This results in a drastic reduction in computational overhead and nodes explored compared to the uninformed methods.
+* **A-Star Search:** An informed, best-first search algorithm utilizing a custom **Manhattan Distance** heuristic. By calculating the total estimated cost utilizing the formula f(n) = g(n) + h(n), the algorithm intelligently prioritizes which nodes to expand. This results in a drastic reduction in computational overhead and nodes explored compared to the uninformed methods.
 
 ## Repository Structure
 
